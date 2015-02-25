@@ -1,0 +1,11 @@
+= RubyXLonRails
+
+Almost identical clone of {SpreadsheetOnRails}[https://raw.githubusercontent.com/10to1/spreadsheet_on_rails] but uses RubyXL and works with *.xlsx files.
+
+Intention was to use this gem also as a modification tool for xlsx files, therefore the default template doesn't contain the creation of a `workbook` variable.
+
+Use something like:
+  
+  workbook = RubyXL::Parser.parse 'path/to/xlsx/file'
+
+in the beginning of a template.
